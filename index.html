@@ -37,7 +37,7 @@ input {
     var readable = function(a) {
       return () => {
         $.ajax({
-          url:"https://api.mastermind.do/115?url=" + a.xhref,
+          url:"https://api.mastermind.do/endpoint/115/5fca0ec8-561c-44a3-aa19-aa7d4f925190/?url=" + a.xhref,
           crossDomain: true,
           success: function (response) {
             $('.content').html('')
@@ -55,7 +55,7 @@ input {
       $('.submit').click(() => {
         var search = $('.search').val()
         $.ajax({
-          url:"https://api.mastermind.do/116?search="+search,
+          url:"https://api.mastermind.do/endpoint/116/5fca0ec8-561c-44a3-aa19-aa7d4f925190/?search="+search,
           crossDomain: true,
           success: function (response) {
             $('.links').html('')
