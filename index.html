@@ -37,7 +37,7 @@ input {
     var readable = function(a) {
       return () => {
         $.ajax({
-          url:"https://api.mastermind.do/endpoint/115/5fca0ec8-561c-44a3-aa19-aa7d4f925190/?url=" + a.xhref,
+          url:"https://api.mastermind.do/v1/115/9db132f5-20c9-49cf-8af7-cb07249dea49/?url=" + a.xhref,
           crossDomain: true,
           success: function (response) {
             $('.content').html('')
