@@ -55,7 +55,7 @@ input {
       $('.submit').click(() => {
         var search = $('.search').val()
         $.ajax({
-          url:"https://api.mastermind.do/endpoint/116/5fca0ec8-561c-44a3-aa19-aa7d4f925190/?search="+search,
+          url:"https://api.mastermind.do/v1/116/9db132f5-20c9-49cf-8af7-cb07249dea49/?search="+search,
           crossDomain: true,
           success: function (response) {
             $('.links').html('')
